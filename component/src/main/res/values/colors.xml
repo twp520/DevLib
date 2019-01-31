@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimary">#ffce00</color>
+    <color name="colorPrimaryDark">#ffce00</color>
+    <color name="colorAccent">#ffce00</color>
+    <color name="white">#ffffff</color>
+    <color name="white25">#25ffffff</color>
+    <color name="font_black">#000000</color>
+    <color name="font_black80">#80000000</color>
+    <color name="font_answer_btn">#010101</color>
+    <color name="font_register_service">#999999</color>
+    <color name="font_photo_tip">#cc000000</color>
+    <color name="font_main_tab_text">#999999</color>
+    <color name="content_bg">#f7f7f7</color>
+    <color name="font303030">#303030</color>
+    <color name="content_bgf1">#f1f1f1</color>
+    <color name="selection_text">#9e9e9e</color>
+    <color name="add_button_bg">#008aff</color>
+    <color name="modification_head_text">#008aff</color>
+    <color name="dialog_post">#fc6449</color>
+    <color name="answer_select">#b9b9b9</color>
+    <color name="font010101">#010101</color>
+    <color name="card_question_title">#d9d9d9</color>
+    <color name="color_dc">#dcdcdc</color>
+    <color name="divline">#d6d6d6</color>
+    <color name="card_question_tv2">#cecece</color>
+    <color name="nextButtonUnEnable">#fee477</color>
+    <color name="nextButtonTextUnEnable">#c3b98d</color>
+    <color name="btnDelete">#ff3333</color>
+    <color name="color_ver_line">#cda602</color>
+    <color name="efeff4">#efeff4</color>
+
+    <color name="startColor">#32d0b4</color>
+    <color name="centerColor">#31c8b6</color>
+    <color name="endColor">#2fbbb6</color>
+    <color name="unread_msg_bg">#fffbeb</color>
+    <color name="main_bot_text">#212121</color>
+    <color name="choose_share_bg">#e8ecf3</color>
+    <color name="main_blue">#3191ff</color>
+    <color name="main_font_color">#212121</color>
+    <color name="sub_font_color">#676767</color>
+    <color name="third_font_color">#66aaaaaa</color>
+    <color name="yellow_btn_bg_grey">#66fff2bc</color>
+    <color name="btn_text_disable">#66999999</color>
+</resources>

@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion m_config.COMPILE_SDK_VERSION
+
+
+
+    defaultConfig {
+        minSdkVersion m_config.MIN_SDK_VERSION
+        targetSdkVersion m_config.TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    def lifecycle_version = "1.1.1"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "com.android.support:appcompat-v7:$m_config.COMPONENT_VERSION"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+    implementation "com.android.support:design:$m_config.COMPONENT_VERSION"
+    implementation "com.android.support:recyclerview-v7:$m_config.COMPONENT_VERSION"
+    implementation "com.android.support:cardview-v7:$m_config.COMPONENT_VERSION"
+    kapt "android.arch.lifecycle:compiler:$lifecycle_version"
+    api "com.squareup.retrofit2:retrofit:$m_depen.retrofit"
+    api "com.squareup.retrofit2:adapter-rxjava2:$m_depen.retrofit"
+    api "com.squareup.retrofit2:converter-gson:$m_depen.retrofit"
+    api "io.reactivex.rxjava2:rxjava:$m_depen.rxjava"
+    api "io.reactivex.rxjava2:rxandroid:$m_depen.rxandroid"
+    api project(":tools")
+}
+repositories {
+    mavenCentral()
+}

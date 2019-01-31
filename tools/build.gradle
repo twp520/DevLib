@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion m_config.COMPILE_SDK_VERSION
+
+
+
+    defaultConfig {
+        minSdkVersion m_config.MIN_SDK_VERSION
+        targetSdkVersion m_config.TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "com.android.support:appcompat-v7:$m_config.COMPONENT_VERSION"
+    api "com.aliyun.dpa:oss-android-sdk:$m_depen.oss_sdk"
+    api "com.amazonaws:aws-android-sdk-s3:$m_depen.aws_sdk"
+    implementation "com.github.bumptech.glide:glide:$m_depen.glide"
+    kapt "com.github.bumptech.glide:compiler:$m_depen.glide"
+}
